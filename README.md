@@ -28,6 +28,44 @@ Include the jQuery library (version 1.7 or newer) and Backstretch plugin files i
 </script>
 ```
 
+## Added support for captions
+
+```html
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="jquery.backstretch.min.js"></script>
+<script>
+    // To attach Backstrech as the body's background
+    $.backstretch("path/to/image.jpg");
+
+    // You may also attach Backstretch to a block-level element
+    $(".foo").backstretch("path/to/image.jpg");
+
+    // Or, to start a slideshow, just pass in an array of images
+    $(".foo").backstretch(
+        [
+            {
+                "src" : "path/to/image.jpg",
+                "caption" : "<h1>Image caption goes here</h1>"
+            },
+            {
+                "src" : "path/to/image2.jpg",
+                "caption" : "<h1>Image 2 caption goes here</h1>"
+            },
+            {
+               "src" : "path/to/image3.jpg",
+               "caption" : "<h1>Image 3 caption goes here</h1>"
+            }
+        ],
+        {
+            fade: 750,
+            duration: 4000,
+            captionAppendTo: '#wrapper'
+        }
+    );
+</script>
+```
+
+
 ## Options
 
 | Name | Description | Type | Default |
