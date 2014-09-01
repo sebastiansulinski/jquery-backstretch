@@ -35,10 +35,24 @@ Include the jQuery library (version 1.7 or newer) and Backstretch plugin files i
 <script src="jquery.backstretch.min.js"></script>
 <script>
     // To attach Backstrech as the body's background
-    $.backstretch("path/to/image.jpg");
+    $.backstretch(
+        [
+            {
+                "src" : "path/to/image.jpg",
+                "caption" : "<h1>Image caption goes here</h1>"
+            }
+        ]
+    );
 
     // You may also attach Backstretch to a block-level element
-    $(".foo").backstretch("path/to/image.jpg");
+    $(".foo").backstretch(
+        [
+            {
+                "src" : "path/to/image.jpg",
+                "caption" : "<h1>Image caption goes here</h1>"
+            }
+        ]
+    );
 
     // Or, to start a slideshow, just pass in an array of images
     $(".foo").backstretch(
