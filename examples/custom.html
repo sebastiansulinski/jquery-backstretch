@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Images with captions</title>
+    <style>
+        #wrapper {
+            width: 56rem;
+            margin: 2rem auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            box-sizing: border-box;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="wrapper">
+
+
+
+</div>
+
+
+<script src="../libs/jquery/jquery.js"></script>
+<script src="../src/jquery.backstretch.js"></script>
+<script>
+    $.backstretch(
+        [
+            {
+                "src" : "coffee.jpg",
+                "caption" : "<h1>Coffe machine</h1>"
+            },
+            {
+                "src" : "pot-holder.jpg",
+                "caption" : "<h1>Pot holder</h1>"
+            }
+        ],
+        {
+            fade: 750,
+            duration: 4000,
+
+            captionAppendTo: '#wrapper'
+        }
+    );
+</script>
+</body>
+</html>
