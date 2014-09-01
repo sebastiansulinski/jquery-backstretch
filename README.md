@@ -28,7 +28,7 @@ Include the jQuery library (version 1.7 or newer) and Backstretch plugin files i
 </script>
 ```
 
-## Added support for captions
+## (NEW) Added support for captions
 
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
