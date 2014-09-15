@@ -202,7 +202,9 @@
                 caption += this.options.dataCaption;
                 caption += '="';
                 caption += src + this.options.dataCaptionIndexSeparator + index;
-                caption += '">';
+                caption += '"';
+                caption += index != 0 ? ' class="' + this.options.captionHideClass + '"' : null;
+                caption += '>';
                 caption += content;
                 caption += '</div>';
 
