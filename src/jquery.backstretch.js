@@ -84,6 +84,7 @@
         , captionAppendTo: 'body'
         , dataCaption: 'bootstrap-image'
         , dataCaptionIndexSeparator: '_'
+        , captionHideClass: 'hide'
     };
 
     /* STYLES
@@ -253,8 +254,11 @@
             $('[data-' + self.options.dataCaption + '="' + existingSrc + '"]')
                 .fadeOut(200, function() {
 
+                    $(this).addClass(self.options.captionHideClass);
+
                     $('[data-' + self.options.dataCaption + '="' + newSrc + '"]')
-                        .fadeIn(200);
+                        .fadeIn(200)
+                        .removeClass(self.options.captionHideClass);
 
                 });
 
