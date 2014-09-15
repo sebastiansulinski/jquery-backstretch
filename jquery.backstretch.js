@@ -203,7 +203,7 @@
             caption += '="';
             caption += src + this.options.dataCaptionIndexSeparator + index;
             caption += '"';
-            caption += index != 0 ? ' class="' + this.options.captionHideClass + '"' : null;
+            caption += index != 0 ? ' class="' + this.options.captionHideClass + '"' : '';
             caption += '>';
             caption += content;
             caption += '</div>';
